@@ -1,0 +1,6 @@
+
+python manage.py shell
+
+from django.contrib.auth.models import User
+
+user = User.objects.create_user("name","email","password",is_staff=True)
